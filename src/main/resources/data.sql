@@ -1,0 +1,7 @@
+INSERT IGNORE INTO account (account_id, owner_name, balance, account_type) VALUES ('ACC001', 'Rahul', 45000.00, 'Savings');
+INSERT IGNORE INTO account (account_id, owner_name, balance, account_type) VALUES ('ACC002', 'Priya', 120000.00, 'Current');
+INSERT IGNORE INTO bank_transaction (transaction_id, account_id, transaction_type, amount, description, transaction_date) VALUES ('TXN001', 'ACC001', 'CREDIT', 25000.00, 'Salary deposit', '2026-11-01 09:00:00');
+INSERT IGNORE INTO bank_transaction (transaction_id, account_id, transaction_type, amount, description, transaction_date) VALUES ('TXN002', 'ACC001', 'DEBIT', 3500.00, 'Electricity bill', '2026-11-05 14:30:00');
+INSERT IGNORE INTO bank_transaction (transaction_id, account_id, transaction_type, amount, description, transaction_date) VALUES ('TXN003', 'ACC001', 'DEBIT', 1200.00, 'Online shopping', '2026-11-10 18:45:00');
+INSERT IGNORE INTO bank_transaction (transaction_id, account_id, transaction_type, amount, description, transaction_date) VALUES ('TXN004', 'ACC002', 'CREDIT', 60000.00, 'Client payment', '2026-11-03 11:00:00');
+INSERT IGNORE INTO bank_transaction (transaction_id, account_id, transaction_type, amount, description, transaction_date) VALUES ('TXN005', 'ACC002', 'DEBIT', 15000.00, 'Office rent', '2026-11-08 10:15:00');
